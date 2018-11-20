@@ -1,0 +1,10 @@
+<div class="center jumbotron">
+  <h1>Moteur de recherche TMDB</h1>
+
+  <%= form_tag("/search", method: "post") do %>
+    <%= label_tag(:research, "Quel film cherches tu ?") %>
+    <%= text_field_tag(:research) %>
+    <%= submit_tag("Rechercher") %>
+  <% end %>
+
+</div>
